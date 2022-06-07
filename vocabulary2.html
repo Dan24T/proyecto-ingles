@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  
+    <link rel="stylesheet" type="text/css" href="Juegos/Vocabulary2/style.css">
+    <script language="javascript" type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> 
+    <script type="text/javascript" src="Juegos/Vocabulary2/WordFind.js"></script> 
+    <script type="text/javascript" src="Juegos/Vocabulary2/wordfindgame.js"></script> 
+</head>  
+><center><h1>"FIND THE WORDS IN THE SEARCH OF LETTERS, DRAG THE PUSH BUTTON TO UNDERLINE EACH WORD."</h1></center>
+
+<body>
+
+    <div id='juego'></div>
+    <div id='Palabras'></div>
+    <p></p>
+    <p></p>
+    <div><button id='solve'>Solve game</button>
+        <button  id='solve' onClick="window.location.reload();" ><b>Retry</b> </button>
+    <a id = 'solve' type="button" href="Menu.html"> Return</a>
+</div>
+    <p></p>
+    <p></p>
+    <script>
+    var words = ['RFID', 'ATTACHMENT', 'DEVICE', 'EPOS','ENABLED','UPLOAD','WAREHOUSE','SUPPLYCHIAN','SERVICE','BROADBAND','WIFI','BATTERY','EMAIL','KEYBOARD','BLUETOOTH','SPAM'];
+        var gamePuzzle = wordfindgame.create(words, '#juego', '#Palabras'); 
+        
+    var puzzle = wordfind.newPuzzle(words,{height: 18, width:18, fillBlanks: false});
+    wordfind.print(puzzle);   
+        
+    $('#solve').click( function() {wordfindgame.solve(gamePuzzle, words);});
+        
+    </script>
+    
+</body>
+</html>

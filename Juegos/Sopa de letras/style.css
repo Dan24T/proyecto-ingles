@@ -1,0 +1,111 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+ background: url(imagen.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+p {
+  font: 40pt sans-serif;
+  margin: 40px 40px 4px 40px;
+}
+
+/**
+* Styles for the puzzle
+*/
+#juego {
+  border: 2px solid black;
+  padding: 40px;
+  float: left;
+  margin: 60px 50px;
+}
+
+#juego div {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* style for each square in the puzzle */
+#juego .puzzleSquare {
+  height: 60px;
+  width: 50px;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 0;
+  font: 1em sans-serif;
+}
+
+button::-moz-focus-inner {
+  border: 0;
+}
+
+/* indicates when a square has been selected */
+#juego .selected {
+  background-color: orange;
+}
+
+/* indicates that the square is part of a word that has been found */ 
+#juego .found {
+  background-color: rgb(207, 27, 72);
+  color: white;
+}
+
+#juego .solved {
+  background-color: purple;
+  color: white;
+}
+
+/* indicates that all words have been found */
+#juego .complete {
+  background-color: green;
+}
+
+/**
+* Styles for the word list
+*/
+#Palabras {
+  padding-top: 20px;
+  -moz-column-count: 1;
+  -moz-column-gap: 20px;
+  -webkit-column-count: 2;
+  -webkit-column-gap: 20px;
+  column-count: 2;
+  column-gap: 20px;
+  width: 200px;
+}
+
+#Palabras ul {
+  list-style-type: none;
+}
+
+#Palabras li {
+  padding: 1px 0;
+  font: 1em sans-serif;
+}
+
+/* indicates that the word has been found */
+#Palabras .wordFound {
+  text-decoration: line-through;
+  color: gray;
+}
+
+/**
+* Styles for the button
+*/
+#solve {
+  margin: 0 40px;
+}
+.solve{
+  border: none;
+  width: 100%;
+  color: white;
+  font-size: 20px;
+  background:  #1a2537;
+  padding: 15px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.solve:hover{
+  background: cadetblue;
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="stilos/estilo.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" >
+    </head>
+    <body>
+	<div class="contenedor">
+		<form action="formulario.php" class="formulario" id="formulario" name="formulario" method="POST">
+			<div class="contenedor-inputs">
+				
+				<input type="text" name="nombre" placeholder="Full name">
+				<input type="text" name="fecha" placeholder="Date of Birth, for example 03/24/1998">
+				<input type="text" name="ma" placeholder="password">
+				<input type="text" name="correo" placeholder="Email">
+
+				<ul class="error" id="error"></ul>
+
+			<input type="submit" class="btn" name="registrarse" value="Create Account">
+			<p></p>
+			<center><p> Already have an account? <a class="link" href="sign_in.html">Sing in</a></p></center>
+		</form>
+		</div>
+	</div>
+	<script src="formulario.js"></script>
+</body>
+</html>

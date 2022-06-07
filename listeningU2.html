@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link href ="Juegos/listening2/style.css" rel ="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+<script src = "Juegos/listening2/main.js"></script>
+
+</head>
+
+
+<body>
+    <p></p>
+    <p></p>
+    <p></p>
+<center><H2><b><p style="color:rgb(18, 109, 230);"> Listen to the next audio and complete the sentences using the words shown on the bullets, write the answer in the box as they are written. </p></b></H2></center>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<center><audio controls>
+    <source src="Juegos/listening2/listening2.mp3" type="audio/mp3">
+</audio></center>
+<b><ul id="listaPalabras">
+    <li>service provider</li> 
+    <li>voice calls</li>
+    <li>broadband pipe</li>
+    <li>data centre</li>
+    <li>disruptive technology </li>
+    <li>internet access</li>
+    <li>search engine</li>
+    <li>digital camera</li>
+</ul></b>
+
+<form id = "quiz" name = "quiz">
+
+
+<p class = "questions">A _____________ is an organization that gives its customers facilities such as internet access or mobile telephony.</p>
+<input id = "textbox" type = "text" name = "question1">
+
+<p class = "questions">Traditionally, telecoms companies made most of their profits from _____________, but they have had to diversify into other areas.</p>
+<input id = "textbox" type = "text" name = "question2">
+
+<p class = "questions">A ______________ is a high speed communications channel using a  wire or optical cable.</p>
+<input id = "textbox" type = "text" name = "question3">
+
+<p class = "questions">A _______________ is a  facility where a company's data and applications can be stored securely.</p>
+<input id = "textbox" type = "text" name = "question4">
+
+<p class = "questions">A ________________ is a new invention or process that provides a new product or service in an unexpected way.</p>
+<input id = "textbox" type = "text" name = "question5">
+
+<p class = "questions">With a 3G enabled phone, you can have high speed ______________ 24/7 wherever you go.</p>
+<input id = "textbox" type = "text" name = "question6">
+
+<p class = "questions">Google rapidly became the most widely used ______________ in the 1990s.</p>
+<input id = "textbox" type = "text" name = "question7">
+
+<p class = "questions">The quality of a ______________ depends on the number of pixels and the lens.</p>
+<input id = "textbox" type = "text" name = "question8">
+
+
+
+
+<center><button  id = "button" type="button" onclick = "check();" >Valuate</button>
+    <button  id = "button" type="button" onClick="window.location.reload();">Retry</button>
+    <a  id = "button" type="button" href ="Menu.html">Return</a></center>
+
+</form>
+
+<center><b><div id = "after_submit">
+<p id = "number_correct"></p>
+<p id = "message"></p>
+</div></b></center>
+</html>
+
+</body>
+
+
+
